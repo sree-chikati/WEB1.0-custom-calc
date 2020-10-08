@@ -85,98 +85,97 @@
 
              <!--GDP MULTIPLIER FORMULAS-->
             <section id = page3>
-                <section id="gdp-mult-formulas">
+                <section id="mult-formulas">
                     <h2>GDP Multiplier Formulas</h2>
                     <label>
-                        <select id = "select-gdp-mult">
-                            <option value = "3">Select Option</option>
-                            
-                            <option value = "5">MPC = Change in Consumption / Change in Income</option>
-                           
-                            <option value = "7">MPS = Change in Savings / Change in Income</option>
-                            
+                        <select id = "select-mult" onchange="mult_formula()">
+                            <option value = "0">Select Option</option>
+                            <option value = "1">MPC = 1- MPS</option>
+                            <option value = "2">MPC = Change in Consumption / Change in Income</option>
+                            <option value = "3">MPS = 1-MPC</option>
+                            <option value = "4">MPS = Change in Savings / Change in Income</option>
+                            <option value = "5">Tax Multiplier = MPC / MPS</option>
                         </select>
                     </label>
                 </section>
 
                 <section id = "display-elements3">
-                    <section id="gdp-mult-display">
-                        <h2 id="gdp2-display">GDP MULTIPLIER FORMULA DISPLAY</h2>
-                            
-                            <!--MPC FORMULA 1
-                            <div id = "mpc1Div">
-                                <p>
-                                    1 - MPS
-                                    <input id="mpc1" 
-                                    value="0" 
-                                    type = "number">
-                                    <br>
-                                </p>
-                                <span id="show-mpc1"></span>
-                            </div>
-                            -->
+                    <section id="mult-display">
+                        <h2 id="mult-display">GDP MULTIPLIER FORMULA DISPLAY</h2>
+                        <div id = "marginalConsDiv">
+                            <p>
+                                1 (Make sure this is 1)
+                                <input id="sub1" 
+                                value="1" 
+                                type = "number"> -
 
-                            <!--MPC FORMULA 2-->
-                            <div id = "mpc2Div">
-                                <p>
-                                    Change in Consumption
-                                    <input id="cons-change" 
-                                    value="0" 
-                                    type = "number"> /
+                                MPS 
+                                <input id="marg-save" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-marginal-cons"></span>
+                        </div>
+                        
+                        <div id = "marginalChangeDiv">
+                            <p>
+                                Change in Consumption
+                                <input id="cons-change" 
+                                value="0" 
+                                type = "number"> /
 
-                                    Change in Income
-                                    <input id="income-change1" 
-                                    value="0" 
-                                    type = "number">
-                                </p>
-                                <span id="show-mpc2"></span>
-                            </div>
+                                Change in Income
+                                <input id="income-change" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-marginal-change"></span>
+                        </div>
+                          
+                        <div id = "marginalSaveDiv">
+                            <p>
+                                1 (Make sure this is 1)
+                                <input id="min1" 
+                                value="1" 
+                                type = "number"> -
 
-                             <!--MPS FORMULA 1
-                            <div id = "mps1Div">
-                                <p>
-                                    1 - MPC
-                                    <input id="mps1" 
-                                    value="0" 
-                                    type = "number">
-                                    <br>
-                                </p>
-                                <span id="show-mps1"></span>
-                            </div> 
-                            -->
+                                MPC 
+                                <input id="marg-cons" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-marginal-save"></span>
+                        </div>
 
-                            <!--MPS FORMULA 2-->
-                            <div id = "mps2Div">
-                                <p>
-                                    Change in Savings
-                                    <input id="savings-change" 
-                                    value="0" 
-                                    type = "number"> /
+                        <div id = "saveChangeDiv">
+                            <p>
+                                Change in Savings
+                                <input id="savings-change" 
+                                value="0" 
+                                type = "number"> /
 
-                                    Change in Income
-                                    <input id="income-change2" 
-                                    value="0" 
-                                    type = "number">
-                                </p>
-                                <span id="show-mps2"></span>
-                            </div>
+                                Change in Income
+                                <input id="income-change1" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-save-change"></span>
+                        </div>
 
-                             <!--TAX MULTIPLIER
-                             <div id = "taxDiv">
-                                <p>
-                                    MPC
-                                    <input id="mpc" 
-                                    value="0" 
-                                    type = "number"> /
+                        <div id = "taxMultDiv">
+                            <p>
+                                MPC
+                                <input id="marginal-propensity-cons" 
+                                value="0" 
+                                type = "number"> /
 
-                                    MPS
-                                    <input id="mps" 
-                                    value="0" 
-                                    type = "number">
-                                </p>
-                                <span id="show-tax"></span>
-                            </div>
-                            -->
+                                MPS
+                                <input id="marginal-propensity-save" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-tax-mult"></span>
+                        </div>
 
                     </section>
                 </section>
@@ -188,47 +187,113 @@
                 <section id="inflation-formulas">
                     <h2>Inflation Formulas</h2>
                     <label>
-                        <select id = "select-inflation">
-                            <option value = "Inflation = Nominal % change – Real  % change">Inflation = Nominal % change – Real % change</option>
-                            <option value = "Real % Change = Nominal % change – Inflation">Real % Change = Nominal % change – Inflation</option>
-                            <option value = "CPI = New Market Basket Value/Base Market Basket Value x 100">CPI = New Market Basket Value/Base Market Basket Value x 100</option>
-                            <option value = "Deflator =  Nominal Value/Real Value x 100">Deflator =  Nominal Value/Real Value x 100</option>
-                            <option value = "Inflation rate = (New Index – Old Index) / Old Index x 100">Inflation rate = (New Index – Old Index) / Old Index x 100</option>
-                            <option value = "Tax Multiplier = MPC / (1-MPC) = MPC / MPS">Tax Multiplier = MPC / (1-MPC) = MPC / MPS</option>
-                            <option value = "Real value =  Nominal Value/Index x 100">Real value =  Nominal Value/Index x 100</option>
+                        <select id = "select-inflation" onchange="inflation_formula()">
+                            <option value = "0">Select Option</option>
+                            <option value = "1">Inflation = Nominal % change – Real % change</option>
+                            <option value = "2">Real % Change = Nominal % change – Inflation</option>
+                            <option value = "3">CPI = New Market Basket Value/Base Market Basket Value x 100</option>
+                            <option value = "4">Deflator =  Nominal Value/Real Value x 100</option>
+                            <option value = "5">Inflation rate = (New Index – Old Index) / Old Index x 100</option>
+                            <option value = "6">Real value =  Nominal Value/Index x 100</option>
                         </select>
                     </label>
                 </section>
 
                 <section id = "display-elements4">
-                    <!--SECTION 3: HEADLINE DISPLAY-->
                     <section id="inflation-display">
                         <h2 id="inf-display">INFLATION FORMULAS DISPLAY</h2>
-                        <span id="show-inf">Choose formula</span>...
+                        <div id = "infDiv">
+                            <p>
+                                Nominal % change
+                                <input id="nom-change" 
+                                value="0" 
+                                type = "number"> -
+
+                                Real % change
+                                <input id="real-change" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-inflation"></span>
+                        </div>
+
+                        <div id = "realChangeDiv">
+                            <p>
+                                Nominal % change
+                                <input id="nom-change1" 
+                                value="0" 
+                                type = "number"> -
+
+                                Inflation
+                                <input id="inf" 
+                                value="0" 
+                                type = "number">
+                            </p>
+                            <span id="show-real-change"></span>
+                        </div>
+
+                        <div id = "consumerPriceDiv">
+                            <p>
+                                New Market Basket Value
+                                <input id="new-basket-value" 
+                                value="0" 
+                                type = "number"> /
+
+                                Base Market Basket Value
+                                <input id="base-basket-value" 
+                                value="0" 
+                                type = "number"> x 100
+                            </p>
+                            <span id="show-consumer-price"></span>
+                        </div>
+
+                        <div id = "deflatorDiv">
+                            <p>
+                                Nominal Value
+                                <input id="nom-value" 
+                                value="0" 
+                                type = "number"> /
+
+                                Real Value
+                                <input id="real-value" 
+                                value="0" 
+                                type = "number"> x 100
+                            </p>
+                            <span id="show-deflator"></span>
+                        </div>
+
+                        <div id = "inflationRateDiv">
+                            <p>
+                                (New Index
+                                <input id="new-index" 
+                                value="0" 
+                                type = "number"> -
+
+                                Old Index
+                                <input id="old-index" 
+                                value="0" 
+                                type = "number">) / Old Index x 100
+                            </p>
+                            <span id="show-inflation-rate"></span>
+                        </div>
+
+                        <div id = "realValDiv">
+                            <p>
+                                Nominal Value
+                                <input id="nom-value1" 
+                                value="0" 
+                                type = "number"> /
+
+                                Index
+                                <input id="index" 
+                                value="0" 
+                                type = "number"> x 100
+                            </p>
+                            <span id="show-real-value"></span>
+                        </div>
                     </section>
                 </section>
             </section>
-
-             <!--BANKING FORMULAS-->
-             <section id = "page5">
-                <section id="banking-formulas">
-                    <h2>Banking Formulas</h2>
-                    <label>
-                        <select id = "select-banking">
-                            <option value = "Money Multiplier =  1 / Reserve Requirement">Money Multiplier =  1 / Reserve Requirement</option>
-                            <option value = "Quantity of Money Theory: Nominal GDP = M x V = P x Y">Quantity of Money Theory: Nominal GDP = M x V = P x Y</option>
-                        </select>
-                    </label>
-                </section>
-
-                <section id = "display-elements5">
-                    <!--SECTION 3: HEADLINE DISPLAY-->
-                    <section id="banking-display">
-                        <h2 id="bank-display">BANKING FORMULAS DISPLAY</h2>
-                        <span id="show-bank">Choose formula</span>...
-                    </section>
-                </section>
-             </section>
             
         </main>
     <script src="./scripts.js"></script>

@@ -131,29 +131,3 @@ the section they name. */
     }
 
 
-#page5{
-    background-color: #caa2fd;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-    #banking-formulas{
-        display: flex;
-        flex-direction: column;
-        margin: 0 3rem;
-        padding: 1rem;
-        background-color: white;
-    }
-
-    #display-elements5{
-        display: flex;
-        flex-direction: column;
-        margin: 0 3rem;
-        padding: 1rem;
-        background-color: white;
-    }
-
-
