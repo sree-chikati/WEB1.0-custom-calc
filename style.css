@@ -1,0 +1,141 @@
+/* ---- IMPORTS ---- */ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@500&family=Roboto+Condensed:wght@300&family=Sacramento&display=swap');
+/* 
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Sacramento', cursive; 
+*/
+
+
+/* ---- BODY ---- */  
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: whitesmoke;
+}
+
+main > section {
+    overflow: auto;
+    min-height: 100vh;
+}
+
+nav, main > section {
+    overflow: auto;
+}
+
+main > section {
+    /* Give each section a minimum height that is 
+    the height of the window */
+    min-height: 100vh;
+}
+
+/* Give each section a different background color. 
+The id names are unique so styles here apply just 
+the section they name. */
+#page1{
+    background-color: whitesmoke;
+}
+
+#page2{
+    background-color: teal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+    #gdp-formulas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    #display-elements2{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+        
+#page3{
+    background-color: #64defd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+    #gdp-mult-formulas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    #display-elements3{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+#page4{
+    background-color: #4e9dc2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+    #inflation-formulas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    #display-elements4{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+
+#page5{
+    background-color: #caa2fd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+    #banking-formulas{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    #display-elements5{
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+        padding: 1rem;
+        background-color: white;
+    }
+
+
