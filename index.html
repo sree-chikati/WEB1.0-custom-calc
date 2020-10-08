@@ -16,7 +16,8 @@
                 <section id="gdp-formulas">
                     <h2>GDP Formulas</h2>
                     <label>
-                        <select id = "select-gdp-formula">
+                        <select id = "select-gdp-formula" onchange="gdp_formula()">
+                            <option value = "0">Select Option</option>
                             <option value = "1">Output Expenditure Model</option>
                             <option value = "2">Income Approach</option>
                         </select>
@@ -27,7 +28,7 @@
                     <!--SECTION 3: HEADLINE DISPLAY-->
                     <section id="gdp-form-display">
                         <h2 id="gdp1-display">GDP FORMULA DISPLAY</h2>
-                        <div class = "output">
+                        <div id = "output">
                             <p>
                                 Consumption (C)
                                 <input id="consumption" 
@@ -60,7 +61,7 @@
                             <span id="show-output"></span>
                         </div>
 
-                        <div class = "income">
+                        <div id = "income">
                             <p>
                                 Wages (W)
                                 <input id="wages" 

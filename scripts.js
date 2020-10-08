@@ -52,21 +52,17 @@ function calculateIncome(){
     const out = parseInt(W + I + R + P)
     showIncome.innerHTML = out.toFixed(2)
 }
-function GDP(){
-    const oF = document.getElementsById('1')
-    const outputFunc = oF.options[oF.selectedIndex].value
-
-    const iF = document.getElementsById('2')
-    const incomeFunc = iF.options[iF.selectedIndex].value
-
-    if(outputFunc == 1){
-        output.style.display = "block"
-        calculateOutput()
+function gdp_formula() {
+    var x = document.getElementById("select-gdp-formula").value;
+    if(x == "0"){
+      document.getElementById("output").innerHTML = ""
     }
-    else if(incomeFunc == 2){
-        output.style.display = "block"
-        calculateIncome()
+    else if(x == "1"){
+      document.getElementById("output").innerHTML = "Output"
     }
-}
+    else if(x == "2"){
+      document.getElementById("intput").innerHTML = "Input"
+    }
+  }
 
-GDP()
+gdp_formula()
