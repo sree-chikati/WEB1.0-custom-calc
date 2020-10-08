@@ -362,5 +362,3 @@ function inflation_formula() {
 }
 
 inflation_formula()
-
-//BANKING FORMULAS START HERE ---------------------------------------------
