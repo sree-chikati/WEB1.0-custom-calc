@@ -1,7 +1,14 @@
 //ANIMATIONS----------------------------------------------------------------
+const page1 = document.querySelector("#page1")
+const intro_name = document.querySelector("#intro-name")
+const final_name = document.querySelector("#final-project")
+const headline = document.querySelector(".headline")
 
-
-
+const tl = gsap.timeline();
+tl.from(page1,1, {height: "0%"}, {width: "80%"})
+tl.to(page1,1.2, {width: "80%"}, {widht:"100%"})
+tl.from(intro_name, 1.2, {opcaity: 0, x: 30}, {opcaity: 1, x: 0},);
+tl.from(final_name, 1.2, {opcaity: 0, x: 30}, {opcaity: 1, x: 0}, );
 
 //GDP FORMULAS---------------------------------------------------------------
 const showOut = document.querySelector("#show-output")
