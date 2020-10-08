@@ -65,14 +65,13 @@ the section they name. */
     .output{
         background-color: thistle;
         padding: 0.5rem;
-        display:none;
+       
     }
 
     .income{
         background-color: thistle;
         padding: 0.5rem;
-        display:none;
-    }
+    }  
 
         
 #page3{

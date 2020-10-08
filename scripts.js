@@ -49,8 +49,8 @@ function calculateIncome(){
     const R = parseInt(rent.value)
     const P = parseInt(prof.value)
 
-    const out = parseInt(W + I + R + P)
-    showIncome.innerHTML = out.toFixed(2)
+    const income = parseInt(W + I + R + P)
+    showIncome.innerHTML = income.toFixed(2)
 }
 function gdp_formula() {
     var x = document.getElementById("select-gdp-formula").value;
@@ -58,11 +58,11 @@ function gdp_formula() {
       document.getElementById("output").innerHTML = ""
     }
     else if(x == "1"){
-      document.getElementById("output").innerHTML = "Output"
+      document.getElementById("output").innerHTML = "Output Expenditure Model"
     }
     else if(x == "2"){
-      document.getElementById("intput").innerHTML = "Input"
+      document.getElementById("output").innerHTML = "Income Approach"
     }
-  }
+}
 
 gdp_formula()
