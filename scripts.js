@@ -1,3 +1,8 @@
+//ANIMATIONS----------------------------------------------------------------
+
+
+
+
 //GDP FORMULAS---------------------------------------------------------------
 const showOut = document.querySelector("#show-output")
 const showIncome = document.querySelector("#show-income")
