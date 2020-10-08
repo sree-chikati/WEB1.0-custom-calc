@@ -28,63 +28,53 @@
                     <!--SECTION 3: HEADLINE DISPLAY-->
                     <section id="gdp-form-display">
                         <h2 id="gdp1-display">GDP FORMULA DISPLAY</h2>
-                        <div id = "output">
+                        <div id = "outputDiv">
                             <p>
                                 Consumption (C)
                                 <input id="consumption" 
                                 value="0" 
-                                type = "number"
-                                class = "output"> +
+                                type = "number"> +
 
                                 Gross Investment (Ig)
                                 <input id="investment" 
                                 value="0" 
-                                type = "number"
-                                class = "output"> +
+                                type = "number"> +
                                 <br>
                                 Government Spending (G)
                                 <input id="government" 
                                 value="0" 
-                                type = "number"
-                                class = "output"> +
+                                type = "number"> +
                                 <br>
                                 (Exports – Imports) (X-M)
                                 (<input id="exports" 
                                 value="0" 
-                                type = "number"
-                                class = "output"> -
+                                type = "number"> -
                                 <input id="imports" 
                                 value="0" 
-                                type = "number"
-                                class = "output">)
+                                type = "number">)
                             </p>
                             <span id="show-output"></span>
                         </div>
 
-                        <div id = "income">
+                        <div id = "incomeDiv">
                             <p>
                                 Wages (W)
                                 <input id="wages" 
                                 value="0" 
-                                type = "number"
-                                class = "income"> +
-
+                                type = "number"> +
                                 Interest (I)
                                 <input id="interest" 
                                 value="0" 
-                                type = "number"
-                                class = "income"> +
+                                type = "number"> +
                                 <br>
                                 Rent (R)
                                 <input id="rent" 
                                 value="0" 
-                                type = "number"
-                                class = "income"> +
+                                type = "number"> +
                                 Profit (P)
-                                <input id="profit" 
+                                (<input id="profit" 
                                 value="0" 
-                                type = "number"
-                                class = "income">
+                                type = "number">
                             </p>
                             <span id="show-income"></span>
                         </div>
@@ -99,23 +89,95 @@
                     <h2>GDP Multiplier Formulas</h2>
                     <label>
                         <select id = "select-gdp-mult">
-                            <option value = "MPC = 1- MPS">MPC = 1- MPS</option>
-                            <option value = "MPC = Change in Consumption / Change in Income">MPC = Change in Consumption / Change in Income</option>
-                            <option value = "MPS = 1-MPC">Times New Roman</option>
-                            <option value = "MPS = Change in Savings / Change in Income">MPS = Change in Savings / Change in Income</option>
-                            <option value = "Spending Multiplier = 1 / (1-MPC) = 1 / MPS">Spending Multiplier = 1 / (1-MPC) = 1 / MPS</option>
-                            <option value = "Tax Multiplier = MPC / (1-MPC) = MPC / MPS">Tax Multiplier = MPC / (1-MPC) = MPC / MPS</option>
-                            <option value = "Balanced Budget Multiplier = 1">Balanced Budget Multiplier = 1</option>
+                            <option value = "3">Select Option</option>
+                            
+                            <option value = "5">MPC = Change in Consumption / Change in Income</option>
+                           
+                            <option value = "7">MPS = Change in Savings / Change in Income</option>
+                            
                         </select>
-                    </label>
                     </label>
                 </section>
 
                 <section id = "display-elements3">
-                    <!--SECTION 3: HEADLINE DISPLAY-->
                     <section id="gdp-mult-display">
                         <h2 id="gdp2-display">GDP MULTIPLIER FORMULA DISPLAY</h2>
-                        <span id="show-gdp2">Choose formula</span>...
+                            
+                            <!--MPC FORMULA 1
+                            <div id = "mpc1Div">
+                                <p>
+                                    1 - MPS
+                                    <input id="mpc1" 
+                                    value="0" 
+                                    type = "number">
+                                    <br>
+                                </p>
+                                <span id="show-mpc1"></span>
+                            </div>
+                            -->
+
+                            <!--MPC FORMULA 2-->
+                            <div id = "mpc2Div">
+                                <p>
+                                    Change in Consumption
+                                    <input id="cons-change" 
+                                    value="0" 
+                                    type = "number"> /
+
+                                    Change in Income
+                                    <input id="income-change1" 
+                                    value="0" 
+                                    type = "number">
+                                </p>
+                                <span id="show-mpc2"></span>
+                            </div>
+
+                             <!--MPS FORMULA 1
+                            <div id = "mps1Div">
+                                <p>
+                                    1 - MPC
+                                    <input id="mps1" 
+                                    value="0" 
+                                    type = "number">
+                                    <br>
+                                </p>
+                                <span id="show-mps1"></span>
+                            </div> 
+                            -->
+
+                            <!--MPS FORMULA 2-->
+                            <div id = "mps2Div">
+                                <p>
+                                    Change in Savings
+                                    <input id="savings-change" 
+                                    value="0" 
+                                    type = "number"> /
+
+                                    Change in Income
+                                    <input id="income-change2" 
+                                    value="0" 
+                                    type = "number">
+                                </p>
+                                <span id="show-mps2"></span>
+                            </div>
+
+                             <!--TAX MULTIPLIER
+                             <div id = "taxDiv">
+                                <p>
+                                    MPC
+                                    <input id="mpc" 
+                                    value="0" 
+                                    type = "number"> /
+
+                                    MPS
+                                    <input id="mps" 
+                                    value="0" 
+                                    type = "number">
+                                </p>
+                                <span id="show-tax"></span>
+                            </div>
+                            -->
+
                     </section>
                 </section>
             </section>

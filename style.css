@@ -62,12 +62,12 @@ the section they name. */
         background-color: white;
     }
 
-    #output{
+    #outputDiv{
         padding: 0.5rem;
        
     }
 
-    #income{
+    #incomeDiv{
         padding: 0.5rem;
     }  
 
@@ -95,6 +95,15 @@ the section they name. */
         padding: 1rem;
         background-color: white;
     }
+
+    #mpc_2{
+        padding: 0.5rem;
+       
+    }
+
+    #mps_2{
+        padding: 0.5rem;
+    }  
 
 #page4{
     background-color: #4e9dc2;
