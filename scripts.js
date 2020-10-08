@@ -52,6 +52,7 @@ function calculateIncome(){
     const income = parseInt(W + I + R + P)
     showIncome.innerHTML = income.toFixed(2)
 }
+
 function gdp_formula() {
     var x = document.getElementById("select-gdp-formula").value;
     if(x == "0"){

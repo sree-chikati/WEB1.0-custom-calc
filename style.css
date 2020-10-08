@@ -62,14 +62,12 @@ the section they name. */
         background-color: white;
     }
 
-    .output{
-        background-color: thistle;
+    #output{
         padding: 0.5rem;
        
     }
 
-    .income{
-        background-color: thistle;
+    #income{
         padding: 0.5rem;
     }  
 
