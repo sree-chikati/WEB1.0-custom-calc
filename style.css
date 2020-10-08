@@ -62,6 +62,18 @@ the section they name. */
         background-color: white;
     }
 
+    .output{
+        background-color: thistle;
+        padding: 0.5rem;
+        display:none;
+    }
+
+    .income{
+        background-color: thistle;
+        padding: 0.5rem;
+        display:none;
+    }
+
         
 #page3{
     background-color: #64defd;

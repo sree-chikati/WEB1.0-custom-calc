@@ -17,8 +17,8 @@
                     <h2>GDP Formulas</h2>
                     <label>
                         <select id = "select-gdp-formula">
-                            <option value = "Output Expenditure Model">Output Expenditure Model</option>
-                            <option value = "Income Approach">Income Approach</option>
+                            <option value = "1">Output Expenditure Model</option>
+                            <option value = "2">Income Approach</option>
                         </select>
                     </label>
                 </section>
@@ -27,7 +27,66 @@
                     <!--SECTION 3: HEADLINE DISPLAY-->
                     <section id="gdp-form-display">
                         <h2 id="gdp1-display">GDP FORMULA DISPLAY</h2>
-                        <span id="show-gdp1">Choose formula</span>...
+                        <div class = "output">
+                            <p>
+                                Consumption (C)
+                                <input id="consumption" 
+                                value="0" 
+                                type = "number"
+                                class = "output"> +
+
+                                Gross Investment (Ig)
+                                <input id="investment" 
+                                value="0" 
+                                type = "number"
+                                class = "output"> +
+                                <br>
+                                Government Spending (G)
+                                <input id="government" 
+                                value="0" 
+                                type = "number"
+                                class = "output"> +
+                                <br>
+                                (Exports – Imports) (X-M)
+                                (<input id="exports" 
+                                value="0" 
+                                type = "number"
+                                class = "output"> -
+                                <input id="imports" 
+                                value="0" 
+                                type = "number"
+                                class = "output">)
+                            </p>
+                            <span id="show-output"></span>
+                        </div>
+
+                        <div class = "income">
+                            <p>
+                                Wages (W)
+                                <input id="wages" 
+                                value="0" 
+                                type = "number"
+                                class = "income"> +
+
+                                Interest (I)
+                                <input id="interest" 
+                                value="0" 
+                                type = "number"
+                                class = "income"> +
+                                <br>
+                                Rent (R)
+                                <input id="rent" 
+                                value="0" 
+                                type = "number"
+                                class = "income"> +
+                                Profit (P)
+                                (<input id="profit" 
+                                value="0" 
+                                type = "number"
+                                class = "income">
+                            </p>
+                            <span id="show-income"></span>
+                        </div>
                     </section>
                 </section>
             </section>
@@ -109,5 +168,6 @@
              </section>
             
         </main>
+    <script src="./scripts.js"></script>
     </body>
 </html>
